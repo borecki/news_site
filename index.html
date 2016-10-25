@@ -1,0 +1,488 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="News site Rafal Borek">
+<meta name="keywords" content="News,Information,Site,Rafal,Borek">
+<meta name="author" content="Rafał Borek">
+<title>News Site by Rafał Borek</title>
+<link rel="icon" href="content/favicon.png" type="image/x-icon">
+<link href="css/screen.css" rel="stylesheet" type="text/css" />
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body >
+	<header>
+		<div class="header-container">
+			<div class="left-side">
+				<div class="icon-square">
+					<span>C</span><span>24</span>
+				</div>
+				<div class="triangle-right"></div>
+				<div class="site-address">
+					<h1><a href="#">city24.com</a></h1>
+				</div>
+			</div>
+			<div class="right-side">
+				<button type="button" id="newsletterBtn" class="btn"><i class="fa fa-file" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Newsletter</button>
+				<button type="button" id="contactBtn" class="btn"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Contact</button>
+				
+				<!-- Newsletter modal -->
+				<div id="newsletterModal" class="modal">
+					<div class="modal-content">
+						<div class="modal-body">
+							<span class="close">&times</span>
+							<h4>Subscribe to our</h4>
+							<h3>NEWSLETTER</h3>
+							<h4>To be updated with all the lastet news!</h4>
+							<form>
+								<input type="email" id="email" placeholder="Your e-mail">
+								<button>JOIN</button>	 
+							</form>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Contact modal -->
+				<div id="contactModal" class="modal">
+					<div class="modal-content">
+						<div class="modal-body">
+							<span class="close">&times</span>
+							<h4>Write to us!</h4>
+							<form>
+								<div class="input-form">
+									<label><i class="fa fa-user" aria-hidden="true"></i></label>
+									<input type="email" id="email" placeholder="Your e-mail">
+								</div>
+								<div class="input-form">
+									<label><i class="fa fa-envelope" aria-hidden="true"></i></label>
+									<input type="text" id="text" placeholder="Subject">
+								</div>
+								<div class="input-form">
+									<label><i class="fa fa-comment" aria-hidden="true"></i></label>
+									<textarea placeholder="Subject" rows="8"></textarea>
+								</div>
+								<button>SUBMIT</button>	 
+							</form>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</header>
+<nav>
+	<div class="fullfill-container">
+		<div class="fullfill"></div>
+	</div>
+	<div class="main-nav">
+		<div class="nav-content">
+			<div class="menu-nav-icon">
+				<i class="fa fa-bars" aria-hidden="true"></i>
+			</div>
+			<div class="main-links">
+				<ul>
+					<li><a>City24.pl</a></li>
+					<div class="vertical-separator"></div>
+					<li><a>News</a><div></div></li>
+					<div class="vertical-separator"></div>
+					<li><a>Informations</a><div></div></li>
+					<div class="vertical-separator"></div>
+					<li><a>Foods</a><div></div></li>
+					<div class="vertical-separator"></div>
+					<li><a>Public Transport</a><div></div></li>
+					<div class="vertical-separator"></div>
+					<li><a>Promotions</a><div></div></li>
+					<div class="vertical-separator"></div>
+				</ul>
+				<div class="btn-group">
+					<button type="button"><A href="#">Quicklinks&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i></a></button>
+					<div class="dropdown-menuu">
+						<ul>
+							<a class="dropdown-items addInSmall" href="#"><li>Informations</li></a>
+							<a class="dropdown-items addInSmall" href="#"><li>Accidents</li></a>
+							<a class="dropdown-items addInSmall" href="#"><li>Culture</li></a>
+							<a class="dropdown-items addInSmall" href="#"><li>Sport</li></a>
+							<div class="dropdown-item-separator addInSmall"></div>
+							<a class="dropdown-items" href="#"><li>Announcements</li></a>
+							<a class="dropdown-items" href="#"><li>Gallery</li></a>
+							<a class="dropdown-items" href="#"><li>Companies</li></a>
+							<a class="dropdown-items" href="#"><li>Store promotions</li></a>
+							<div class="dropdown-item-separator"></div>
+							<a class="dropdown-items" href="#"><li>Restaurants</li></a>
+							<a class="dropdown-items" href="#"><li>Pizzeria</li></a>
+							<div class="dropdown-item-separator"></div>
+							<a class="dropdown-items" href="#"><li>FACEBOOK</li></a>
+							<div class="dropdown-item-separator"></div>
+							<a class="dropdown-items" href="#"><li>Bus schedule</li></a>
+						</ul>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+</nav>
+<section id="search-cat">
+	<div class="input-form">
+		<input id="main-search" placeholder="Search for something here">
+		<label for="main-search"><i class="fa fa-search" aria-hidden="true"></i></label>
+	</div>
+	<div class="art-category">
+		<ul>
+			<li><a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;&nbsp;Informations</a></li>
+			<li><a href="#"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>&nbsp;&nbsp;Accidents</a></li>
+			<li><a href="#"><i class="fa fa-book" aria-hidden="true"></i>&nbsp;&nbsp;Culture</a></li>
+			<li><a href="#"><i class="fa fa-futbol-o" aria-hidden="true"></i>&nbsp;&nbsp;Sport</a></li>
+		</ul>
+	</div>
+</section>
+<section id="main-articles">
+	<div class="main-art-slider">
+		<div class="main-art">
+			<div class="main-news-img zoom">
+				<div class="title-in-img">Housework can't kill you, but why take a chance? Housework can't kill you, but why take a chance?</div>
+				<a href="#"><img src="content/main-news-img.jpg" alt="image for article nr 2"/></a>
+			</div>
+			<div class="separator"></div>
+			<div class="triangle-right"></div>
+			<div class="text-container">
+				<a href="">
+					<h2>Housework can't kill you, but why take a chance? Housework can't kill you, but why take a chance?</h2>
+				</a>
+				<p class="excerpt">Maecenas quis risus felis, at volutpat elit...Quisque accumsan eleifend dolor, nec bibendum nibh ultricies at. Nunc convallis risus sit amet augue bibendum non lobortis eros interdum. Maecenas quis risus felis, at volutpat elit...Quisque accumsan eleifend dolor, nec bibendum nibh ultricies at. Nunc convallis risus sit amet augue bibendum non lobortis eros interdum. Maecenas quis risus felis, at volutpat eli [...]</p>
+				<p class="publish-date"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;&nbsp;14th October 2016</p>
+				<p class="read-more"><a href="">READ&nbsp;MORE&nbsp;&nbsp;<i class="fa fa-plus" aria-hidden="true"></i></a></p>
+			</div>
+			<div class="paginate">
+                <ul>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i></a>1</li>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i></a>2</li>
+                    <li class="selected"><a href="#"><i class="fa fa-circle" aria-hidden="true"></i></a>3</li>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i></a>4</li>
+                </ul>
+            </div>
+		</div>
+		<div class="main-art">
+			<div class="main-news-img zoom">
+				<div class="title-in-img">Lorem ipsum dolor sit amet enim.</div>
+				<a href="#"><img src="content/main-news-img-2.jpg" alt="image for article nr 2"/></a>
+			</div>
+			<div class="separator"></div>
+			<div class="triangle-right"></div>
+			<div class="text-container">
+				<a href="">
+					<h2>Lorem ipsum dolor sit amet enim.</h2>
+				</a>
+				<p class="excerpt">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperdiet sit amet magna [...]</p>
+				<p class="publish-date"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;&nbsp;26th February 2015</p>
+				<p class="read-more"><a href="">READ&nbsp;MORE&nbsp;&nbsp;<i class="fa fa-plus" aria-hidden="true"></i></a></p>
+			</div>
+			<div class="paginate">
+                <ul>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i></a>1</li>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i></a>2</li>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i></a>3</li>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i></a>4</li>
+                </ul>
+            </div>
+		</div>
+		<div class="main-art">
+			<div class="main-news-img zoom">
+				<div class="title-in-img">Litwo! Ojczyzno moja! Ty jestes jak zdrowie. Ile cie trzeba cenic, ten tylko sie dowie, kto Cie stracil.</div>
+				<a href="#"><img src="content/main-news-img-3.jpg" alt="image for article nr 2"/></a>
+			</div>
+			<div class="separator"></div>
+			<div class="triangle-right"></div>
+			<div class="text-container">
+				<a href="">
+					<h2>Litwo! Ojczyzno moja! Ty jestes jak zdrowie. Ile cie trzeba cenic, ten tylko sie dowie, kto Cie stracil.</h2>
+				</a>
+				<p class="excerpt">Sed sagittis urna. Aenean ut leo vitae sagittis ipsum pretium eu, dapibus ac, augue. Fusce non eros. Nullam vitae wisi id mi id odio at fermentum vel, magna. Integer faucibus orci orci, id consequat pharetra. Morbi ligula tristique id, eleifend tincidun [...]</p>
+				<p class="publish-date"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;&nbsp;6th May 2016</p>
+				<p class="read-more"><a href="">READ&nbsp;MORE&nbsp;&nbsp;<i class="fa fa-plus" aria-hidden="true"></i></a></p>
+			</div>
+			<div class="paginate">
+                <ul>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i></a>1</li>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i></a>2</li>
+                    <li class="selected"><a href="#"><i class="fa fa-circle" aria-hidden="true"></i></a>3</li>
+                    <li><a href="#"><i class="fa fa-circle" aria-hidden="true"></i></a>4</li>
+                </ul>
+            </div>
+		</div>
+	</div>
+</section>
+<section class="main-slider">
+	<div class="slider">
+		<div class="angles prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+		<div class="items">
+			<div class="item-container">
+				<div class="img-container zoom">
+					<a href="#"><img src="content/news-2.jpg" alt="image for article nr 2"/></a>
+				</div>
+				<div class="text-container">
+					<a href=""><h3>Taste & Sounds from Thailand</h3></a>
+					<p class="short-excerpt">A concept that in many fields refers to a quantity without bound or end.</p>
+				</div>
+			</div> 
+			<div class="item-container"> 
+				<div class="img-container zoom">
+					<a href="#"><img src="content/news-3.jpg" alt="image for article nr 2"/></a>
+				</div>
+				<div class="text-container">
+					<a href=""><h3>BlazRobar.com is awesome for PSD</h3></a>
+					<p class="short-excerpt">An excursion in which the final destination is the same as the starting point.</p> 
+				</div>
+			</div> 
+			<div class="item-container"> 
+				<div class="img-container zoom">
+					<a href="#"><img src="content/news-4.jpg" alt="image for article nr 2"/></a>
+				</div>
+				<div class="text-container">
+					<a href=""><h3>Nice Looking? Mountains Ah?</h3></a>
+					<p class="short-excerpt">jQuery  is a cross-browser JavaScript library designed to simplify the client-side scripting.</p> 
+				</div>
+			</div> 
+			<div class="item-container"> 
+				<div class="img-container zoom">
+					<a href="#"><img src="content/news-5.jpeg" alt="image for article nr 2"/></a>
+				</div>
+				<div class="text-container">
+					<a href=""><h3>BlazRobar.com is awesome for PSD</h3></a> 
+					<p class="short-excerpt">A concept that in many fields refers to a quantity without bound or end.</p> 
+				</div>
+			</div>
+			<div class="item-container">
+				<div class="img-container zoom">
+					<a href="#"><img src="content/news-2.jpg" alt="image for article nr 2"/></a>
+				</div>
+				<div class="text-container">
+					<a href=""><h3>Taste & Sounds from Thailand</h3></a>
+					<p class="short-excerpt">A concept that in many fields refers to a quantity without bound or end.</p> 
+				</div>
+			</div> 
+			<div class="item-container"> 
+				<div class="img-container zoom">
+					<a href="#"><img src="content/news-3.jpg" alt="image for article nr 2"/></a>
+				</div>
+				<div class="text-container">
+					<a href=""><h3>BlazRobar.com is awesome for PSD</h3></a>
+					<p class="short-excerpt">An excursion in which the final destination is the same as the starting point.</p> 
+				</div>
+			</div> 
+			<div class="item-container"> 
+				<div class="img-container zoom">
+					<a href="#"><img src="content/news-4.jpg" alt="image for article nr 2"/></a>
+				</div>
+				<div class="text-container">
+					<a href=""><h3>Nice Looking. Mountains Ah?</h3></a>
+					<p class="short-excerpt">jQuery  is a cross-browser JavaScript library designed to simplify the client-side scripting.</p> 
+				</div>
+			</div> 
+			<div class="item-container"> 
+				<div class="img-container zoom">
+					<a href="#"><img src="content/news-5.jpeg" alt="image for article nr 2"/></a>
+				</div>
+				<div class="text-container">
+					<a href=""><h3>BlazRobar.com is awesome for PSD</h3></a> 
+					<p class="short-excerpt">A concept that in many fields refers to a quantity without bound or end.</p> 
+				</div>
+			</div>
+		</div>
+		<div class="angles next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+	</div>
+</section>
+<section id="last-art-advertisement">
+	<div class="last-arts">
+		<a href="#">
+			<div class="last-art">
+				<div class="last-art-content">
+					<h4>Good Inc. Good Choice.</h4>
+					<div class="date-comment-amount">
+						<span class="date">5th January 2015</span>
+						<span class="separator"></span>
+						<span class="comment-amount">32 Comments</span>
+					</div>
+					<p class="short-excerpt">I believe that if life gives you lemons, you should make lemonade... And try to find somebody whose life has given them vodka, and have a party. </p>
+				</div>
+			</div>
+		</a>
+		<a href="#">
+			<div class="last-art">
+				<div class="last-art-content">
+					<h4>Behind every great man is a woman rolling her eyes. </h4>
+					<div class="date-comment-amount">
+						<span class="date">15th Semptember 2015</span>
+						<span class="separator"></span>
+						<span class="comment-amount">156 Comments</span>
+					</div>
+					<p class="short-excerpt">Quisque accumsan eleifend dolor, nec bibendum nibh ultricies at. Nunc convallis risus sit amet augue bibendum non lobortis eros interdum. Maecenas quis risus felis, at...</p>
+				</div>
+			</div>
+		</a>
+		<a href="#">
+			<div class="last-art">
+				<div class="last-art-content">
+					<h4>A day without sunshine is like, you know, night. </h4>
+					<div class="date-comment-amount">
+						<span class="date">1st July 2015</span>
+						<span class="separator"></span>
+						<span class="comment-amount">85 Comments</span>
+					</div>
+					<p class="short-excerpt">Quisque accumsan eleifend dolor, nec bibendum nibh ultricies at.</p>
+				</div>
+			</div>
+		</a>
+	</div>
+	<div class="advertisement">
+		<div class="ad-slider">
+			<div class="ad">
+				<a href="">
+					<div class="ad-info">ADVERTISEMENT</div>
+					<div class="title-for-small">Nice Looking? Mountains Ah?</div>
+					<img src="content/ad1.jpg" alt="ad image"/>
+				</a>
+				<div class="ad-text-container">
+					<h3>Nice Looking<br>Mountains Ah?</h3>
+					<p>Quisque accumsan eleifend dolor, nec bibendum nibh ultricies at. Nunc convallis risus sit amet augue.</p>
+				</div>
+				<p><a href="">READ&nbsp;MORE&nbsp;&nbsp;<i class="fa fa-plus-circle" aria-hidden="true"></i></a></p>
+			</div>
+			<div class="ad">
+				<a href="">
+					<div class="ad-info">ADVERTISEMENT</div>
+					<div class="title-for-small">Get your facts first!</div>
+					<img src="content/ad2.jpg" alt="ad image"/>
+				</a>
+				<div class="ad-text-container">
+					<h3>Get your facts first!</h3>
+					<p>Can distort them as you please. As a child my family's menu consisted of two choices: take it or leave it.</p>
+				</div>
+				<p><a href="">READ&nbsp;MORE&nbsp;&nbsp;<i class="fa fa-plus-circle" aria-hidden="true"></i></a></p>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="weather-last-comments">
+	<div class="weather">
+		<div class="first-col">
+			<div>
+				<p class="city">HACZOW</p>
+				<p class="date">24th June 2016</p>
+			</div>
+			<div>
+				<p class="sky">SKY IS CLEAR</p>
+			</div>
+		</div>
+		<div class="second-col">
+			<p class="current-temp">12°C</p>
+		</div>
+		<div class="logo">
+			<a href="#"><img src="content/OWM.png" alt="Open Weather Map API"/></a>
+		</div>
+	</div>	
+	<div class="comments">
+	<div class="background-for-header"></div>
+		<div class="last-comments">
+			<div class="comment">
+				<div class="comment-header">
+					<p>John, on 10th March 2016</p>
+					<p><a href="#">Nice looking? Mountains Ah?</a></p>
+				</div>
+				<div class="comment-text">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Curabitur et ligula.</div>
+			</div>
+			<div class="separator"></div>
+			<div class="comment">
+				<div class="comment-header">
+					<p>Paul, on 22th August 2016</p>
+					<p><a href="#">A day without sunshine is like [..]</a></p>
+				</div>
+				<div class="comment-text">Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. a imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit [...]</div>
+			</div>
+			<div class="separator"></div>
+			<div class="comment">
+				<div class="comment-header">
+					<p>Kate, on 4th April 2016</p>
+					<p><a href="#">Behind every great man [..]</a></p>
+				</div>
+				<div class="comment-text">Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. a imperdiet sit amet magna.</div>
+			</div>
+		</div>
+	</div>
+</section>
+<footer>
+	<div class="fullfill-container">
+		<div class="fullfill"></div>
+	</div>
+	<div class="sec-nav">
+		<nav>
+			<div class="left-side">
+				<div class="icon-square">
+					<span>C</span><span>24</span>
+				</div>
+				<div class="triangle-right"></div>
+				<div class="site-address"><h5><a href="#">city24.com</a></h5></div>
+			</div>
+			<div class="main-links">
+				<ul>
+					<li><div><a class="a hvr-underline-reveal">City24.pl</a></div></li>
+					<div class="vertical-separator"></div>
+					<li><div><a class="a hvr-underline-reveal">News</a></div></li>
+					<div class="vertical-separator"></div>
+					<li><div><a class="a hvr-underline-reveal">Informations</a></div></li>
+					<div class="vertical-separator"></div>
+					<li><div><a class="a hvr-underline-reveal">Foods</a></div></li>
+					<div class="vertical-separator"></div>
+					<li><div><a class="a hvr-underline-reveal">Public Transport</a></div></li>
+					<div class="vertical-separator"></div>
+					<li><div><a class="a hvr-underline-reveal">Promotions</a></div></li>
+					<div class="vertical-separator"></div>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<div class="links-tags">
+		<div class="links">
+			<div class="internal-link">
+				<ul>
+					<li><a href="#">Announcements</a></li>
+					<li><a href="#">Companies</a></li>
+					<li><a href="#">Gallery</a></li>
+					<li><a href="#">Contact the editors</a></li>
+					<li><a href="#">Terms of use</a></li>
+					<li><a href="#">Webmaster</a></li>
+				</ul>
+			</div>
+			<div class="partner-links">
+				<div class="partners-logo">
+					<a href="#"><img src="content/random-logotype.png" alt="random company logo"/></a>
+					<a href="#"><img src="content/random-logotype.png" alt="random company logo"/></a>
+					<a href="#"><img src="content/random-logotype.png" alt="random company logo"/></a>
+					<a href="#"><img src="content/random-logotype.png" alt="random company logo"/></a>
+				</div>
+			</div>
+		</div>
+		<div class="tags">
+			<a href="#" style='font-size: 15px;'>Curabitur</a>
+			<a href="#" style='font-size: 10px;'>ligula</a>
+			<a href="#" style='font-size: 12px;'>molestie</a>
+			<a href="#" style='font-size: 10px;'>porta</a>
+			<a href="#" style='font-size: 15px;'>ultricies</a>
+			<a href="#" style='font-size: 9px;'>urna</a>
+			<a href="#" style='font-size: 12px;'>Vestibulum</a>
+			<a href="#" style='font-size: 15px;'>commodo</a>
+			<a href="#" style='font-size: 10px;'>volutpat</a>
+			<a href="#" style='font-size: 12px;'>convallis</a>
+			<a href="#" style='font-size: 10px;'>ligula</a>
+			<a href="#" style='font-size: 15px;'>lorem</a>
+			<a href="#" style='font-size: 12px;'>Vestibulum</a>
+		</div>
+	</div>
+	<div class="bar">
+		<span>Code:&nbsp;Rafał&nbsp;Borek&nbsp;&nbsp;&nbsp;&nbsp;&&nbsp;&nbsp;&nbsp;&nbsp;Design:&nbsp;Good.&nbsp;Inc.<span>
+	</div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/sctipts.js"></script> 
+<script type="text/javascript" src="js/jquery.carouFredSel-6.2.1.js"></script>
+</body>
+</html>
