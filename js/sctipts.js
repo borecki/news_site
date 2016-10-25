@@ -65,7 +65,7 @@ $(document).ready(function() {
 			$("#last-art-advertisement .advertisement .ad").css("margin-left", (($("#last-art-advertisement .last-arts .last-art").width()-310)/2));
 		}
 		
-		if ( $(window).width() < 611  ) {
+		if ( $(window).width() < 595 ) {
 			$(".main-slider .slider .items .item-container").hover(function() {
 				$(this).find("h3").each(function() { $(this).css("color", "white"); })
 				$(this).find("p").each(function() { $(this).css("color", "white"); })
