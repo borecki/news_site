@@ -1133,7 +1133,7 @@ footer .bar span{
 
 .modal-content {
     position: fixed;
-    top: 100px;
+    top: 50px;
 	left: 30%;
 	right: 30%;
     background-color: #fefefe;
@@ -1304,12 +1304,12 @@ footer .bar span{
 /* Animations for modal */
 @-webkit-keyframes slideIn {
     from {top: -300px; opacity: 0}
-    to {top: 100px; opacity: 1}
+    to {top: 50px; opacity: 1}
 }
 
 @keyframes slideIn {
     from {top: -300px; opacity: 0}
-    to {top: 100px; opacity: 1}
+    to {top: 50px; opacity: 1}
 }
 
 @-webkit-keyframes fadeIn {
