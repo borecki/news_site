@@ -1,4 +1,4 @@
-/* script for pop up modal show */
+/* script for pop up modals show */
 document.getElementById('newsletterBtn').onclick = function() {
 	modal = document.getElementById('newsletterModal');
 	modal.style.display = "block";
@@ -9,9 +9,20 @@ document.getElementById('contactBtn').onclick = function() {
 	modal.style.display = "block";
 }
 
+
+if(document.getElementById('fullsizeBtn')) {
+	document.getElementById('fullsizeBtn').onclick = function() {
+		modal = document.getElementById('fullsizeModal');
+		modal.style.display = "block";
+	}
+}
+
 var closeCross = document.getElementsByClassName("close");
 closeCross[0].onclick = function() { modal.style.display = "none"; }
 closeCross[1].onclick = function() { modal.style.display = "none"; }
+if(closeCross[2]) { closeCross[2].onclick = function() { modal.style.display = "none"; } }
+
+
 
 window.onclick = function(event) {
 	if (event.target == modal) {
